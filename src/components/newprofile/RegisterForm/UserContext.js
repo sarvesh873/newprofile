@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-export const UserContext = createContext([{}, () => {}]);
+export const UserContext = createContext([{}, () => { }]);
 
 export default props => {
   const [state, setState] = useState({
@@ -8,20 +8,18 @@ export default props => {
       gender: "",
       birthdate: new Date().toISOString().slice(0, 10),
       location: "",
-      salary:0,
+      salary: 0,
       profession: "",
       acceptTerms: false,
       newsletter: false,
       goalAmount: "",
       goalDuration: "",
+      insuranceAmount:0,
+      loanAmount:0,
+      hasLoan:false,
+      hasInsurance:false,
       depMem: "", // New field for number of dependent members
       child: "",
-    },
-    expenditure: {
-      hasLoan: false,
-      loanAmount: 0,
-      hasInsurance: false,
-      insuranceAmount: 0
     },
     errors: {},
     // depDetails: [] 

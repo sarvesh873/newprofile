@@ -61,15 +61,15 @@ export default props => {
               <MenuItem value="">
                 <em>Select your Gender</em>
               </MenuItem>
-              <MenuItem value="male">Male</MenuItem>
-              <MenuItem value="female">Female</MenuItem>
-              <MenuItem value="other">Other</MenuItem>
+              <MenuItem value="Male">Male</MenuItem>
+              <MenuItem value="Female">Female</MenuItem>
+              <MenuItem value="Other">Other</MenuItem>
             </Select>
             {errors["gender"] && <FormHelperText>{errors["gender"]}</FormHelperText>}
           </FormControl>
         </Grid>
 
-      <Grid item xs={12}>
+      <Grid item xs={5}>
         <TextField
           type='date'
           name='birthdate'
